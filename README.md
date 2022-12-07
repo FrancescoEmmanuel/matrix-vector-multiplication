@@ -12,7 +12,7 @@ make test
 
 Here, I created a new function in the main_test.c file called check_mult_VectMatrix() (that takes 4 inputs `M`, `v`, `N`, `vector_expected`), to check whether the matVecMult() function works properly by comparing the result that it produces, by the result that I calculated manually. If the code works and it shows that the actual result matches the expected result, then it indicates that the function works properly. However, if the code produces an "assertion failed" message on the terminal, then the function does not work properly.
 
-For this test I used these values for the matrix and vector:
+For this test, I used these values for the matrix and vector:
 ````
 int matrix_input_test_case[3][9] = {
         {9, 2, 1, 2, 7, 3, 3, 10, 5},

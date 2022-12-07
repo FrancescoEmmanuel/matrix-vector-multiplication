@@ -10,6 +10,12 @@ int generateRandomInt(int lower, int upper){
     return (rand() % (upper-lower+1)) + lower;
 }
 
+void initVec(int* v, int N){
+    for(int i=0; i<N; i++){
+        v[i] = generateRandomInt(LOWER,UPPER);
+    }
+}
+
 void initMat(int* M, int N){
     for(int i=0; i<N; i++){
         for(int j=0; j<N; j++){
@@ -18,11 +24,7 @@ void initMat(int* M, int N){
     }
 }
 
-void initVec(int* v, int N){
-    for(int i=0; i<N; i++){
-        v[i] = generateRandomInt(LOWER,UPPER);
-    }
-}
+
 
 void check_mult_VectMatrix(int *M, int *v, int N, int *vector_expected){
     int *Mv = (int*)malloc(N * sizeof(int));

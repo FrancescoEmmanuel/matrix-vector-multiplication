@@ -54,7 +54,7 @@ Test #3:
  Expected V[1] = 111; Actual V[1] = 111
  Expected V[2] = 135; Actual V[2] = 135
 ```
-This confirms the validity and functionality of the matVecMult()function.
+The results above confirms the validity and functionality of the matVecMult()function.
 
 ## Benchmark
 

@@ -1,4 +1,4 @@
-# Scientific Comuputing: Matrix & Vector Multiplication
+# Scientific Computing: Matrix & Vector Multiplication
 
 This program measures space and time complexity as benchmark for matrix and vector multiplication using the C language. 
 
@@ -27,7 +27,7 @@ int matrix_input_test_case[3][9] = {
     };
 ````
 
-I first calculate the matrix produced when multiplying the matrix and vector to get the expected results, and inputted it inside my code with the vector_expected_test_case function. The expected results are as follows:
+I first calculate the matrix produced when multiplying the matrix and vector to get the expected results, and inputted it inside my code with the vector_expected_test_case() function. The expected results are as follows:
 ````
 int vector_expected_test_case[3][3] = {
         {85, 118, 173},

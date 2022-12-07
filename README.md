@@ -2,15 +2,40 @@
 
 This program measures space and time complexity as benchmark for matrix and vector multiplication using the C language. 
 
-## How to run
+## Testing
 
-Run the code
+How to run the code:
 
 ```
 make test
 ```
 
-Here, I created a new function in the main_test.c file called check_mult_VectMatrix(), which checks whether the multiply_vector_matrix() function works properly by comparing the result that it produces, by the result that I calculated manually. If the code works and it shows that the actual result matches the expected result, then it indicates that the function works properly. However, if the code produces an "assertion failed" on the terminal, then the function does not work properly.
+Here, I created a new function in the main_test.c file called check_mult_VectMatrix(), to check whether the matVecMult() function works properly by comparing the result that it produces, by the result that I calculated manually. If the code works and it shows that the actual result matches the expected result, then it indicates that the function works properly. However, if the code produces an "assertion failed" message on the terminal, then the function does not work properly.
+
+For this test I used these values for the matrix and vector:
+````
+int matrix_input_test_case[3][9] = {
+        {9, 2, 1, 2, 7, 3, 3, 10, 5},
+        {7, 5, 2, 1, 8, 5, 5, 3, 14},
+        {5, 8, 2, 3, 6, 4, 1, 4, 8}
+    };
+
+    int vector_input_test_case[3][3] = {
+        {6, 13, 5},
+        {8, 6, 10},
+        {3, 9, 12},
+    };
+````
+
+I first calculate the matrix produced when multiplying the matrix and vector to get the expected results, and inputted it inside my code with the vector_expected_test_case function. The expected results are as follows:
+````
+int vector_expected_test_case[3][3] = {
+        {85, 118, 173},
+        {106, 106, 198},
+        {111, 111, 135}
+    };
+````
+I then run the code and the results are as follows:
 
 ```
 Test #1:
@@ -28,6 +53,7 @@ Test #3:
  Expected V[1] = 111; Actual V[1] = 111
  Expected V[2] = 135; Actual V[2] = 135
 ```
+This confirms the validity and functionality of the matVecMult()function.
 
 ## Benchmark
 

@@ -10,7 +10,24 @@ Run the code
 make test
 ```
 
-Here, I created a new function in mylib.c, which checks whether the multiply_vector_matrix() function works properly by comparing the result that it produces by the result that I calculated manually. If it does, then it indicates that the function works correctly. 
+Here, I created a new function in the main_test.c file called check_mult_VectMatrix(), which checks whether the multiply_vector_matrix() function works properly by comparing the result that it produces, by the result that I calculated manually. If the code works and it shows that the actual result matches the expected result, then it indicates that the function works properly. However, if the code produces an "assertion failed" on the terminal, then the function does not work properly.
+
+```
+Test #1:
+ Expected V[0] = 85; Actual V[0] = 85
+ Expected V[1] = 118; Actual V[1] = 118
+ Expected V[2] = 173; Actual V[2] = 173
+
+Test #2:
+ Expected V[0] = 106; Actual V[0] = 106
+ Expected V[1] = 106; Actual V[1] = 106
+ Expected V[2] = 198; Actual V[2] = 198
+
+Test #3:
+ Expected V[0] = 111; Actual V[0] = 111
+ Expected V[1] = 111; Actual V[1] = 111
+ Expected V[2] = 135; Actual V[2] = 135
+```
 
 ## Benchmark
 

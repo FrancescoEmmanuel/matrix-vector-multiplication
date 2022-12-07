@@ -1,4 +1,4 @@
-# Scientific Computing: Matrix & Vector Multiplication
+# Scientific Computing: Matrix & Vector Multiplication Benchmark
 
 This program measures space and time complexity as benchmark for matrix and vector multiplication using the C language. 
 
